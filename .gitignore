@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+backend/venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/dist/
+.npm
+
+# Environment & Secrets
+.env
+.env.local
+*.pem
+*.key
+
+# Data & OS
+.DS_Store
+Thumbs.db
+*.log
+backend/app/data/uploads/

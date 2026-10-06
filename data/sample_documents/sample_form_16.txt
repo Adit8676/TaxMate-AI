@@ -1,0 +1,40 @@
+FORM NO. 16
+[See rule 31(1)(a)]
+Certificate under section 203 of the Income-tax Act, 1961 for tax deducted at source on salary
+
+Certificate No: CIT-BLR-2024-898234
+Assessment Year: 2025-26
+Financial Year: 2024-25
+
+Name and address of the Employer:
+TechCorp India Solutions Pvt. Ltd., Outer Ring Road, Bengaluru - 560103
+PAN of Employer: AABCT1234E | TAN of Employer: BLRT09823A
+
+Name and address of the Employee:
+Aditya Sharma, Indiranagar, Bengaluru
+PAN of Employee: ABCPS9821K
+
+PART B (Annexure)
+1. Gross Salary:
+   (a) Salary as per provisions contained in sec. 17(1): Rs. 14,50,000
+   (b) Value of perquisites under sec. 17(2): Rs. 0
+   (c) Profits in lieu of salary under sec. 17(3): Rs. 0
+   Total Gross Salary: Rs. 14,50,000
+
+2. Deductions under Section 16:
+   (a) Standard deduction under sec. 16(ia): Rs. 75,000
+   (b) Tax on employment / Professional tax sec. 16(iii): Rs. 2,400
+
+3. Income chargeable under the head "Salaries": Rs. 13,72,600
+
+4. Deductions under Chapter VI-A:
+   (a) Section 80C (EPF + ELSS Mutual Funds): Rs. 1,50,000
+   (b) Section 80D (Health Insurance self): Rs. 25,000
+   (c) Section 80CCD(1B) (National Pension Scheme): Rs. 50,000
+   Total Deductions under Chapter VI-A: Rs. 2,25,000
+
+5. Total Taxable Income: Rs. 11,47,600
+6. Tax on Total Income: Rs. 1,04,000
+7. Health and Education Cess @ 4%: Rs. 4,160
+8. Total Tax Payable: Rs. 1,08,160
+9. Total tax deducted at source: Rs. 1,08,160
