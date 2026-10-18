@@ -27,3 +27,9 @@ frontend/dist/
 Thumbs.db
 *.log
 backend/app/data/uploads/
+
+# AI Agent Configs & Tools
+.gemini/
+.codex/
+.impeccable/
+scratch/

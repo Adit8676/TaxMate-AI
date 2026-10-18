@@ -1,21 +1,23 @@
 import React from 'react';
-import { 
-  Bot, 
-  Calculator, 
-  Scale, 
-  FileText, 
-  Activity, 
-  ShieldCheck, 
-  Sparkles 
+import {
+  Bot,
+  Calculator,
+  Scale,
+  FileText,
+  Activity,
+  ShieldCheck,
+  Sparkles
 } from 'lucide-react';
 
 interface NavbarProps {
   activeTab: string;
   setActiveTab: (tab: string) => void;
   financialYear: string;
+  user?: { name: string; email: string } | null;
+  onLogout?: () => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab, financialYear }) => {
+export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab, financialYear, user, onLogout }) => {
   const navItems = [
     { id: 'chat', label: 'Copilot Chat', icon: Bot },
     { id: 'profile', label: 'Tax Profile', icon: Calculator },
@@ -27,7 +29,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab, financi
   return (
     <header className="sticky top-0 z-40 w-full border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        
+
         {/* Brand */}
         <div className="flex items-center space-x-3 cursor-pointer" onClick={() => setActiveTab('chat')}>
           <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 via-teal-400 to-cyan-500 p-0.5 shadow-lg shadow-emerald-500/20 flex items-center justify-center">
@@ -57,11 +59,10 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab, financi
               <button
                 key={item.id}
                 onClick={() => setActiveTab(item.id)}
-                className={`flex items-center space-x-2 px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 ${
-                  isActive
+                className={`flex items-center space-x-2 px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 ${isActive
                     ? 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 shadow-sm shadow-emerald-500/10'
                     : 'text-slate-400 hover:text-slate-200 hover:bg-white/5'
-                }`}
+                  }`}
               >
                 <Icon className={`w-4 h-4 ${isActive ? 'text-emerald-400' : 'text-slate-400'}`} />
                 <span>{item.label}</span>
@@ -81,6 +82,21 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab, financi
             <ShieldCheck className="w-3.5 h-3.5" />
             <span>Deterministic Math Guard</span>
           </div>
+
+          {user && (
+            <div className="flex items-center space-x-2 pl-2 border-l border-white/10">
+              <span className="text-xs text-slate-300 font-medium hidden sm:inline">
+                {user.name}
+              </span>
+              <button
+                onClick={onLogout}
+                className="text-[11px] text-slate-400 hover:text-white px-2 py-1 rounded-md bg-white/5 hover:bg-white/10 transition-colors cursor-pointer"
+                title="Log out"
+              >
+                Sign Out
+              </button>
+            </div>
+          )}
         </div>
       </div>
 
@@ -93,9 +109,8 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab, financi
             <button
               key={item.id}
               onClick={() => setActiveTab(item.id)}
-              className={`flex flex-col items-center py-1 px-2 rounded-md text-[10px] ${
-                isActive ? 'text-emerald-400' : 'text-slate-400'
-              }`}
+              className={`flex flex-col items-center py-1 px-2 rounded-md text-[10px] ${isActive ? 'text-emerald-400' : 'text-slate-400'
+                }`}
             >
               <Icon className="w-4 h-4 mb-0.5" />
               <span>{item.label.split(' ')[0]}</span>

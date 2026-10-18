@@ -8,7 +8,7 @@
 [![Test Suite](https://img.shields.io/badge/Pytest-18%2F18%20Passed-brightgreen.svg)]()
 [![Evaluation](https://img.shields.io/badge/Golden%20Eval-100%25%20(35%2F35)-brightgreen.svg)]()
 
-> **TaxMate AI** is an interview-ready, production-grade agentic copilot for Indian personal income tax research, regime comparison, and financial document intelligence. It combines deterministic computation, authoritative hybrid RAG (Retrieval-Augmented Generation), standard Model Context Protocol (MCP) servers, and zero-trust security guardrails.
+> **TaxMate AI** is an production-grade agentic copilot for Indian personal income tax research, regime comparison, and financial document intelligence. It combines deterministic computation, authoritative hybrid RAG (Retrieval-Augmented Generation), standard Model Context Protocol (MCP) servers, and zero-trust security guardrails.
 
 ---
 
@@ -244,16 +244,6 @@ TaxMate AI/
 | **Calculation Engine Precision**| $100\%$ | **100.0%** (Unit-tested) | ✅ Perfect |
 | **Average Latency** | $< 100\text{ ms}$ | **6.1 ms** | ✅ Ultra-fast |
 | **P95 Latency** | $< 250\text{ ms}$ | **9.9 ms** | ✅ Ultra-fast |
-
----
-
-## 🎬 3-Minute Live Demo Flow
-
-1. **Grounded Tax Q&A**: Ask *"What is the standard deduction in the New Tax Regime for FY 2024-25?"* — inspect statutory citation and developer telemetry drawer.
-2. **Deterministic Regime Comparison**: Ask *"Which regime saves more money for salary 15 Lakhs?"* — view exact calculation breakdown and savings drivers.
-3. **Interactive Simulator**: Open **Regime Compare** tab — adjust salary slider to observe live breakeven points between Old and New regimes.
-4. **Form 16 Extraction & Reconciliation**: Open **Documents** tab — click *"Load Official Sample Form 16"* to view extracted fields, discrepancy detection, and the human approval merge gate.
-5. **Security & Evaluation Dashboard**: Open **Eval Dashboard** — review the 35 live test case executions, latency distribution, and prompt injection defense metrics.
 
 ---
 
