@@ -212,11 +212,22 @@ TaxMate AI/
 ├── frontend/
 │   ├── src/
 │   │   ├── api/                   # Typed API client
-│   │   ├── components/            # UI Views (Chat, Compare, Profile, Docs, Eval)
+│   │   ├── components/            # UI Views (LandingView, AuthModal, Chat, Compare, Profile, Docs, Eval)
+│   │   │   ├── LandingView.tsx    # Warm Sand & Purple design landing page
+│   │   │   ├── AuthModal.tsx      # Sign In / Sign Up modal dialog
+│   │   │   ├── Navbar.tsx         # Responsive header with session indicator
+│   │   │   ├── ChatView.tsx       # AI Tax Copilot chat interface
+│   │   │   ├── CompareView.tsx    # Old vs New Regime interactive simulator
+│   │   │   ├── TaxProfileView.tsx # Income & Deduction profile manager
+│   │   │   ├── DocumentsView.tsx  # Form 16 parser & reconciliation view
+│   │   │   └── EvaluationView.tsx # Live benchmark & safety metrics dashboard
 │   │   ├── types/                 # TypeScript interfaces
-│   │   ├── App.tsx
+│   │   ├── App.tsx                # App router & authentication gate
+│   │   ├── index.css              # Design tokens & glassmorphism utilities
 │   │   └── main.tsx
+│   ├── index.html                 # Modern typography (Outfit, Plus Jakarta Sans)
 │   ├── package.json
+│   ├── tailwind.config.js
 │   └── vite.config.ts
 ├── mcp_servers/                   # Model Context Protocol Capability Servers
 │   ├── document_server/server.py  # Document & RAG MCP server
@@ -225,6 +236,7 @@ TaxMate AI/
 ├── scripts/
 │   └── run_evaluation.py          # CLI Benchmark runner
 ├── .env.example
+├── .gitignore                     # Ignore AI agent configs, virtual environments & secrets
 ├── extracted_requirements.md      # Master Project Requirements Specification
 ├── pytest.ini
 └── README.md
